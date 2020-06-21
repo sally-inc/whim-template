@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <Main class="main" /> -->
+    <Main class="main" />
     <Player
       v-for="user in $whim.users"
       :key="user.id"
@@ -13,7 +13,7 @@
 export default {
   name: "App",
   components: {
-    // Main: () => import("@/components/main/Index"),
+    Main: () => import("@/components/main/Index"),
     Player: () => import("@/components/player/Index")
   },
   // settings for debug
